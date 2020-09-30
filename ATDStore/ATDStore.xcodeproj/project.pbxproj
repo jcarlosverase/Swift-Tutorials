@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E18B4BB251FF6BF008E5962 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4BA251FF6BF008E5962 /* ProductListView.swift */; };
+		2E18B4C3251FF6DC008E5962 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4C2251FF6DC008E5962 /* ProductDetailView.swift */; };
+		2E18B4CA251FF710008E5962 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4C9251FF710008E5962 /* Product.swift */; };
+		2E18B4D2251FF75A008E5962 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4D1251FF75A008E5962 /* ProductService.swift */; };
+		2E18B4E8251FFC7E008E5962 /* IProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4E7251FFC7E008E5962 /* IProductService.swift */; };
+		2E18B4F825200133008E5962 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B4F725200133008E5962 /* ProductItemView.swift */; };
+		2E18B5032520075F008E5962 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B5022520075F008E5962 /* StoreService.swift */; };
+		2E18B50A252008A7008E5962 /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B509252008A7008E5962 /* ProductListResponse.swift */; };
+		2E18B52725203D3A008E5962 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E18B52625203D3A008E5962 /* ProductListViewModel.swift */; };
+		2E29090A251FA8F600618215 /* ATDStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E290909251FA8F600618215 /* ATDStoreApp.swift */; };
+		2E29090C251FA8F600618215 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29090B251FA8F600618215 /* ContentView.swift */; };
+		2E29090E251FA8FC00618215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E29090D251FA8FC00618215 /* Assets.xcassets */; };
+		2E290911251FA8FC00618215 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E290910251FA8FC00618215 /* Preview Assets.xcassets */; };
+		2E29091C251FA8FD00618215 /* ATDStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29091B251FA8FD00618215 /* ATDStoreTests.swift */; };
+		2E290927251FA8FD00618215 /* ATDStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E290926251FA8FD00618215 /* ATDStoreUITests.swift */; };
+		2ED8B8BA2520FB0400DFFB58 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8B8B92520FB0400DFFB58 /* ProductViewModel.swift */; };
+		2ED8B8BF25210DE800DFFB58 /* ProductDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8B8BE25210DE800DFFB58 /* ProductDetailsResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E290918251FA8FD00618215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2908FE251FA8F600618215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E290905251FA8F600618215;
+			remoteInfo = ATDStore;
+		};
+		2E290923251FA8FD00618215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2908FE251FA8F600618215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E290905251FA8F600618215;
+			remoteInfo = ATDStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E18B4BA251FF6BF008E5962 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		2E18B4C2251FF6DC008E5962 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		2E18B4C9251FF710008E5962 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2E18B4D1251FF75A008E5962 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		2E18B4E7251FFC7E008E5962 /* IProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IProductService.swift; sourceTree = "<group>"; };
+		2E18B4F725200133008E5962 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		2E18B5022520075F008E5962 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		2E18B509252008A7008E5962 /* ProductListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResponse.swift; sourceTree = "<group>"; };
+		2E18B52625203D3A008E5962 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		2E290906251FA8F600618215 /* ATDStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATDStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E290909251FA8F600618215 /* ATDStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDStoreApp.swift; sourceTree = "<group>"; };
+		2E29090B251FA8F600618215 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E29090D251FA8FC00618215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E290910251FA8FC00618215 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E290912251FA8FC00618215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E290917251FA8FD00618215 /* ATDStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATDStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E29091B251FA8FD00618215 /* ATDStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDStoreTests.swift; sourceTree = "<group>"; };
+		2E29091D251FA8FD00618215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E290922251FA8FD00618215 /* ATDStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATDStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E290926251FA8FD00618215 /* ATDStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDStoreUITests.swift; sourceTree = "<group>"; };
+		2E290928251FA8FD00618215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED8B8B92520FB0400DFFB58 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		2ED8B8BE25210DE800DFFB58 /* ProductDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E290903251FA8F600618215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E290914251FA8FD00618215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29091F251FA8FD00618215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E18B4B4251FF3AF008E5962 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4F425200099008E5962 /* ProductList */,
+				2E18B4F5252000A1008E5962 /* ProductDetails */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E18B4B5251FF3BB008E5962 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4C7251FF6E5008E5962 /* Entities */,
+				2E18B4C8251FF6ED008E5962 /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E18B4B6251FF3C1008E5962 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2ED8B8B92520FB0400DFFB58 /* ProductViewModel.swift */,
+				2E18B52625203D3A008E5962 /* ProductListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2E18B4C7251FF6E5008E5962 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4C9251FF710008E5962 /* Product.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2E18B4C8251FF6ED008E5962 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B5082520087A008E5962 /* Responses */,
+				2E18B511252008FB008E5962 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E18B4E6251FFC64008E5962 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4E7251FFC7E008E5962 /* IProductService.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		2E18B4F425200099008E5962 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4BA251FF6BF008E5962 /* ProductListView.swift */,
+				2E18B4F725200133008E5962 /* ProductItemView.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		2E18B4F5252000A1008E5962 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4C2251FF6DC008E5962 /* ProductDetailView.swift */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		2E18B5082520087A008E5962 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B509252008A7008E5962 /* ProductListResponse.swift */,
+				2ED8B8BE25210DE800DFFB58 /* ProductDetailsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		2E18B511252008FB008E5962 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4E6251FFC64008E5962 /* Interfaces */,
+				2E18B5022520075F008E5962 /* StoreService.swift */,
+				2E18B4D1251FF75A008E5962 /* ProductService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2E2908FD251FA8F600618215 = {
+			isa = PBXGroup;
+			children = (
+				2E290908251FA8F600618215 /* ATDStore */,
+				2E29091A251FA8FD00618215 /* ATDStoreTests */,
+				2E290925251FA8FD00618215 /* ATDStoreUITests */,
+				2E290907251FA8F600618215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E290907251FA8F600618215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E290906251FA8F600618215 /* ATDStore.app */,
+				2E290917251FA8FD00618215 /* ATDStoreTests.xctest */,
+				2E290922251FA8FD00618215 /* ATDStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E290908251FA8F600618215 /* ATDStore */ = {
+			isa = PBXGroup;
+			children = (
+				2E18B4B5251FF3BB008E5962 /* Models */,
+				2E18B4B6251FF3C1008E5962 /* ViewModels */,
+				2E18B4B4251FF3AF008E5962 /* Views */,
+				2E290909251FA8F600618215 /* ATDStoreApp.swift */,
+				2E29090B251FA8F600618215 /* ContentView.swift */,
+				2E29090D251FA8FC00618215 /* Assets.xcassets */,
+				2E290912251FA8FC00618215 /* Info.plist */,
+				2E29090F251FA8FC00618215 /* Preview Content */,
+			);
+			path = ATDStore;
+			sourceTree = "<group>";
+		};
+		2E29090F251FA8FC00618215 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2E290910251FA8FC00618215 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E29091A251FA8FD00618215 /* ATDStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E29091B251FA8FD00618215 /* ATDStoreTests.swift */,
+				2E29091D251FA8FD00618215 /* Info.plist */,
+			);
+			path = ATDStoreTests;
+			sourceTree = "<group>";
+		};
+		2E290925251FA8FD00618215 /* ATDStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E290926251FA8FD00618215 /* ATDStoreUITests.swift */,
+				2E290928251FA8FD00618215 /* Info.plist */,
+			);
+			path = ATDStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E290905251FA8F600618215 /* ATDStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E29092B251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStore" */;
+			buildPhases = (
+				2E290902251FA8F600618215 /* Sources */,
+				2E290903251FA8F600618215 /* Frameworks */,
+				2E290904251FA8F600618215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATDStore;
+			productName = ATDStore;
+			productReference = 2E290906251FA8F600618215 /* ATDStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E290916251FA8FD00618215 /* ATDStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E29092E251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStoreTests" */;
+			buildPhases = (
+				2E290913251FA8FD00618215 /* Sources */,
+				2E290914251FA8FD00618215 /* Frameworks */,
+				2E290915251FA8FD00618215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E290919251FA8FD00618215 /* PBXTargetDependency */,
+			);
+			name = ATDStoreTests;
+			productName = ATDStoreTests;
+			productReference = 2E290917251FA8FD00618215 /* ATDStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E290921251FA8FD00618215 /* ATDStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E290931251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStoreUITests" */;
+			buildPhases = (
+				2E29091E251FA8FD00618215 /* Sources */,
+				2E29091F251FA8FD00618215 /* Frameworks */,
+				2E290920251FA8FD00618215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E290924251FA8FD00618215 /* PBXTargetDependency */,
+			);
+			name = ATDStoreUITests;
+			productName = ATDStoreUITests;
+			productReference = 2E290922251FA8FD00618215 /* ATDStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E2908FE251FA8F600618215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2E290905251FA8F600618215 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					2E290916251FA8FD00618215 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2E290905251FA8F600618215;
+					};
+					2E290921251FA8FD00618215 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2E290905251FA8F600618215;
+					};
+				};
+			};
+			buildConfigurationList = 2E290901251FA8F600618215 /* Build configuration list for PBXProject "ATDStore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E2908FD251FA8F600618215;
+			productRefGroup = 2E290907251FA8F600618215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E290905251FA8F600618215 /* ATDStore */,
+				2E290916251FA8FD00618215 /* ATDStoreTests */,
+				2E290921251FA8FD00618215 /* ATDStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E290904251FA8F600618215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E290911251FA8FC00618215 /* Preview Assets.xcassets in Resources */,
+				2E29090E251FA8FC00618215 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E290915251FA8FD00618215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E290920251FA8FD00618215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E290902251FA8F600618215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29090C251FA8F600618215 /* ContentView.swift in Sources */,
+				2E18B4C3251FF6DC008E5962 /* ProductDetailView.swift in Sources */,
+				2ED8B8BA2520FB0400DFFB58 /* ProductViewModel.swift in Sources */,
+				2E18B52725203D3A008E5962 /* ProductListViewModel.swift in Sources */,
+				2E18B5032520075F008E5962 /* StoreService.swift in Sources */,
+				2E18B4CA251FF710008E5962 /* Product.swift in Sources */,
+				2E18B50A252008A7008E5962 /* ProductListResponse.swift in Sources */,
+				2E18B4BB251FF6BF008E5962 /* ProductListView.swift in Sources */,
+				2ED8B8BF25210DE800DFFB58 /* ProductDetailsResponse.swift in Sources */,
+				2E18B4F825200133008E5962 /* ProductItemView.swift in Sources */,
+				2E29090A251FA8F600618215 /* ATDStoreApp.swift in Sources */,
+				2E18B4D2251FF75A008E5962 /* ProductService.swift in Sources */,
+				2E18B4E8251FFC7E008E5962 /* IProductService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E290913251FA8FD00618215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29091C251FA8FD00618215 /* ATDStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29091E251FA8FD00618215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E290927251FA8FD00618215 /* ATDStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E290919251FA8FD00618215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E290905251FA8F600618215 /* ATDStore */;
+			targetProxy = 2E290918251FA8FD00618215 /* PBXContainerItemProxy */;
+		};
+		2E290924251FA8FD00618215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E290905251FA8F600618215 /* ATDStore */;
+			targetProxy = 2E290923251FA8FD00618215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E290929251FA8FD00618215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E29092A251FA8FD00618215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E29092C251FA8FD00618215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ATDStore/Preview Content\"";
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ATDStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E29092D251FA8FD00618215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ATDStore/Preview Content\"";
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ATDStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E29092F251FA8FD00618215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				INFOPLIST_FILE = ATDStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATDStore.app/ATDStore";
+			};
+			name = Debug;
+		};
+		2E290930251FA8FD00618215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				INFOPLIST_FILE = ATDStoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATDStore.app/ATDStore";
+			};
+			name = Release;
+		};
+		2E290932251FA8FD00618215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				INFOPLIST_FILE = ATDStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ATDStore;
+			};
+			name = Debug;
+		};
+		2E290933251FA8FD00618215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G64LUAA6GU;
+				INFOPLIST_FILE = ATDStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.ATDStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ATDStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E290901251FA8F600618215 /* Build configuration list for PBXProject "ATDStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E290929251FA8FD00618215 /* Debug */,
+				2E29092A251FA8FD00618215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E29092B251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29092C251FA8FD00618215 /* Debug */,
+				2E29092D251FA8FD00618215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E29092E251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29092F251FA8FD00618215 /* Debug */,
+				2E290930251FA8FD00618215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E290931251FA8FD00618215 /* Build configuration list for PBXNativeTarget "ATDStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E290932251FA8FD00618215 /* Debug */,
+				2E290933251FA8FD00618215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E2908FE251FA8F600618215 /* Project object */;
+}

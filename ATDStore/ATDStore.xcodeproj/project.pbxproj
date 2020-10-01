@@ -149,8 +149,8 @@
 		2E18B4F425200099008E5962 /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
-				2E18B4BA251FF6BF008E5962 /* ProductListView.swift */,
 				2E18B4F725200133008E5962 /* ProductItemView.swift */,
+				2E18B4BA251FF6BF008E5962 /* ProductListView.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";

@@ -31,3 +31,4 @@ class ProductListViewModel: ObservableObject {
             })
     }
 }
+

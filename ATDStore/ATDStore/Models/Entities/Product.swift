@@ -5,7 +5,7 @@
 //  Created by Juan Alberto Carlos Vera on 9/26/20.
 //
 
-struct Product: Decodable {
+struct Product: Decodable, Hashable {
     let _id: String
     let asin: String
     let title: String
@@ -13,7 +13,7 @@ struct Product: Decodable {
     let thumbnail: String
 }
 
-struct Price: Decodable {
+struct Price: Decodable, Hashable {
     let current_price: Double
     let currency: String
 }

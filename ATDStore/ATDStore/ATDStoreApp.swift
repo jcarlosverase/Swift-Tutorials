@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ATDStoreApp: App {
+    var productListViewModel = ProductListViewModel()
     var body: some Scene {
         WindowGroup {
-            ProductListView()
+            ProductListView(viewModel: productListViewModel)
         }
     }
 }

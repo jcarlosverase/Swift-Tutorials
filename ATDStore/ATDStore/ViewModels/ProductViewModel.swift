@@ -5,7 +5,7 @@
 //  Created by Juan Alberto Carlos Vera on 9/27/20.
 //
 
-struct ProductViewModel {
+struct ProductViewModel: Hashable {
     private let product: Product
     
     var id: String {
@@ -14,8 +14,8 @@ struct ProductViewModel {
     var title: String {
         return product.title
     }
-    var price: Double {
-        return product.price.current_price
+    var price: String {
+        return "\(product.price.currency) \(product.price.current_price)"
     }
     var image: String {
         return product.thumbnail

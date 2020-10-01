@@ -7,25 +7,23 @@
 
 import SwiftUI
 
-struct ProductListState {
-    var service: ProductService
-    var products: [Product]
-}
-
 struct ProductListView: View {
-    
-    private let viewModel = ProductListViewModel()
+    @ObservedObject
+    var viewModel: ProductListViewModel
     
     var body: some View {
-        Text("Welcome to Store!")
-            .onAppear() {
-                self.viewModel.findProducts(byTitle: "iphone")
-            }
+        List(viewModel.productViewModels, id: \.self) { productViewModel in
+            ProductItemView(viewModel: productViewModel)
+        }.onAppear {
+            self.viewModel.findProducts(byTitle: "iphone")
+        }.navigationBarTitle("Product list")
     }
 }
 
 struct ProductView_Previews: PreviewProvider {
+    @State static var productListViewModel = ProductListViewModel()
+    
     static var previews: some View {
-        ProductListView()
+        ProductListView(viewModel: productListViewModel)
     }
 }

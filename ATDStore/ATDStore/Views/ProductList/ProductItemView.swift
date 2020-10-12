@@ -12,9 +12,9 @@ struct ProductItemView: View {
     
     var body: some View {
         HStack {
-            //Image(uiImage: nil)
+            AsyncImageView(imageUrl: viewModel.image)
             VStack(alignment: .leading) {
-                Text(viewModel.title).font(.headline)
+                Text(viewModel.title).font(.headline).foregroundColor(.gray)
                 Spacer().frame(height: 15)
                 Text(viewModel.price).font(.title)
             }

@@ -12,11 +12,13 @@ struct ProductListView: View {
     var viewModel: ProductListViewModel
     
     var body: some View {
-        List(viewModel.productViewModels, id: \.self) { productViewModel in
-            ProductItemView(viewModel: productViewModel)
-        }.onAppear {
-            self.viewModel.findProducts(byTitle: "iphone")
-        }.navigationBarTitle("Product list")
+        NavigationView {
+            List(viewModel.productViewModels, id: \.self) { productViewModel in
+                ProductItemView(viewModel: productViewModel)
+            }.onAppear {
+                self.viewModel.findProducts(byTitle: "macbook")
+            }.navigationBarTitle("Product list")
+        }
     }
 }
 
